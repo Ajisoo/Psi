@@ -95,7 +95,9 @@ public final class ModItems {
 
 	public static final Item spellBullet = new ItemSpellBullet(defaultBuilder());
 	public static final Item projectileSpellBullet = new ItemProjectileSpellBullet(defaultBuilder());
-	public static final Item loopSpellBullet = new ItemLoopcastSpellBullet(defaultBuilder());
+	public static final Item loopSpellBullet = new ItemLoopcastSpellBullet(defaultBuilder(), 5);
+	public static final Item psigemLoopSpellBullet = new ItemLoopcastSpellBullet(defaultBuilder(), 3);
+	public static final Item psigemBlockLoopSpellBullet = new ItemLoopcastSpellBullet(defaultBuilder(), 1);
 	public static final Item circleSpellBullet = new ItemCircleSpellBullet(defaultBuilder());
 	public static final Item grenadeSpellBullet = new ItemGrenadeSpellBullet(defaultBuilder());
 	public static final Item chargeSpellBullet = new ItemChargeSpellBullet(defaultBuilder());
@@ -187,6 +189,8 @@ public final class ModItems {
 		r.register(spellBullet.setRegistryName(LibMisc.MOD_ID, LibItemNames.SPELL_BULLET));
 		r.register(projectileSpellBullet.setRegistryName(LibMisc.MOD_ID, LibItemNames.SPELL_BULLET_PROJECTILE));
 		r.register(loopSpellBullet.setRegistryName(LibMisc.MOD_ID, LibItemNames.SPELL_BULLET_LOOP));
+		r.register(psigemBlockLoopSpellBullet.setRegistryName(LibMisc.MOD_ID, LibItemNames.SPELL_BULLET_LOOP_PSIGEM_BLOCK));
+		r.register(psigemLoopSpellBullet.setRegistryName(LibMisc.MOD_ID, LibItemNames.SPELL_BULLET_LOOP_PSIGEM));
 		r.register(circleSpellBullet.setRegistryName(LibMisc.MOD_ID, LibItemNames.SPELL_BULLET_CIRCLE));
 		r.register(grenadeSpellBullet.setRegistryName(LibMisc.MOD_ID, LibItemNames.SPELL_BULLET_GRENADE));
 		r.register(chargeSpellBullet.setRegistryName(LibMisc.MOD_ID, LibItemNames.SPELL_BULLET_CHARGE));

@@ -274,6 +274,7 @@ public class PlayerDataHandler {
 		public ItemStack lastTickLoopcastStack;
 
 		public int loopcastTime = 1;
+		public int loopcastCooldown = 5;
 		public int loopcastAmount = 0;
 		public int loopcastFadeTime = 0;
 		public boolean overflowed = false;
@@ -412,7 +413,7 @@ public class PlayerDataHandler {
 						Psi.proxy.sparkleFX(x, y, z, r, g, b, grav, 0.25F, 15);
 					}
 
-					if (loopcastTime > 0 && loopcastTime % 5 == 0) {
+					if (loopcastTime > 0 && loopcastTime % loopcastCooldown == 0) {
 						ItemStack bullet = socketable.getSelectedBullet();
 						if (bullet.isEmpty() || !ISpellAcceptor.hasSpell(bullet)) {
 							stopLoopcast();
@@ -431,7 +432,7 @@ public class PlayerDataHandler {
 										deductPsi(cost, 0, true);
 									}
 
-									if (!player.getEntityWorld().isRemote && loopcastTime % 10 == 0) {
+									if (!player.getEntityWorld().isRemote && loopcastTime % loopcastCooldown == 0) {
 										player.getEntityWorld().playSound(null, player.getPosX(), player.getPosY(), player.getPosZ(), PsiSoundHandler.loopcast, SoundCategory.PLAYERS, 0.1F, (float) (0.15 + Math.random() * 0.85));
 									}
 								}

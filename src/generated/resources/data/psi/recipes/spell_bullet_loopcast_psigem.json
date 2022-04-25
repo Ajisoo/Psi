@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PLP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "psi:psigem"
+    },
+    "L": {
+      "item": "psi:spell_bullet_loop"
+    }
+  },
+  "result": {
+    "item": "psi:spell_bullet_loop_psigem"
+  }
+}

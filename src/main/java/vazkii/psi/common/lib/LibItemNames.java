@@ -85,6 +85,8 @@ public final class LibItemNames {
 	public static final String SPELL_BULLET_PROJECTILE = "spell_bullet_projectile";
 	public static final String SPELL_BULLET_PROJECTILE_ACTIVE = "spell_bullet_projectile_active";
 	public static final String SPELL_BULLET_LOOP = "spell_bullet_loop";
+	public static final String SPELL_BULLET_LOOP_PSIGEM = "spell_bullet_loop_psigem";
+	public static final String SPELL_BULLET_LOOP_PSIGEM_BLOCK = "spell_bullet_loop_psigem_block";
 	public static final String SPELL_BULLET_LOOP_ACTIVE = "spell_bullet_loop_active";
 	public static final String SPELL_BULLET_CIRCLE = "spell_bullet_circle";
 	public static final String SPELL_BULLET_CIRCLE_ACTIVE = "spell_bullet_circle_active";

@@ -293,6 +293,19 @@ public class RecipeGenerator extends RecipeProvider implements IConditionBuilder
 				.addIngredient(Tags.Items.STRING)
 				.addCriterion("has_psidust", hasItem(ModItems.psidust))
 				.build(WrapperResult.ofType(BulletUpgradeRecipe.SERIALIZER, consumer), Psi.location("spell_bullet_loopcast_upgrade"));
+		ShapelessRecipeBuilder.shapelessRecipe(ModItems.psigemLoopSpellBullet)
+				.addIngredient(Tags.Items.NETHER_STARS)
+				.addIngredient(ModItems.loopSpellBullet)
+				.addCriterion("has_psidust", hasItem(ModItems.psidust))
+				.build(WrapperResult.ofType(BulletUpgradeRecipe.SERIALIZER, consumer), Psi.location("spell_bullet_loopcast_psigem"));
+		ShapedRecipeBuilder.shapedRecipe(ModItems.psigemBlockLoopSpellBullet)
+				.key('P', ModBlocks.psigemBlock.asItem())
+				.key('L', ModItems.psigemLoopSpellBullet)
+				.patternLine("PPP")
+				.patternLine("PLP")
+				.patternLine("PPP")
+				.addCriterion("has_psidust", hasItem(ModItems.psidust))
+				.build(WrapperResult.ofType(BulletUpgradeRecipe.SERIALIZER, consumer), Psi.location("spell_bullet_loopcast_psigem_block"));
 		ShapedRecipeBuilder.shapedRecipe(ModItems.circleSpellBullet)
 				.key('I', Tags.Items.INGOTS_IRON)
 				.key('D', ModTags.PSIDUST)

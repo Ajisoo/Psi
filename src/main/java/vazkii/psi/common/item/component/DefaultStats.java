@@ -106,13 +106,16 @@ public class DefaultStats {
 
 	public static void registerBatteryStats() {
 		// Basic
+		ItemCADComponent.addStatToStack(ModItems.cadBatteryBasic, EnumCADStat.OVERCLOCK, 5000);
 		ItemCADComponent.addStatToStack(ModItems.cadBatteryBasic, EnumCADStat.OVERFLOW, 100);
 
 		// Extended
-		ItemCADComponent.addStatToStack(ModItems.cadBatteryExtended, EnumCADStat.OVERFLOW, 200);
+		ItemCADComponent.addStatToStack(ModItems.cadBatteryExtended, EnumCADStat.OVERCLOCK, 10000);
+		ItemCADComponent.addStatToStack(ModItems.cadBatteryExtended, EnumCADStat.OVERFLOW, 500);
 
 		// Ultradense
-		ItemCADComponent.addStatToStack(ModItems.cadBatteryUltradense, EnumCADStat.OVERFLOW, 400);
+		ItemCADComponent.addStatToStack(ModItems.cadBatteryUltradense, EnumCADStat.OVERCLOCK, 15000);
+		ItemCADComponent.addStatToStack(ModItems.cadBatteryUltradense, EnumCADStat.OVERFLOW, 1000);
 	}
 
 	@SubscribeEvent
