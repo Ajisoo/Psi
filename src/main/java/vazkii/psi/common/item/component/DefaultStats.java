@@ -50,6 +50,10 @@ public class DefaultStats {
 		ItemCADComponent.addStatToStack(ModItems.cadAssemblyIvory, EnumCADStat.EFFICIENCY, 95);
 		ItemCADComponent.addStatToStack(ModItems.cadAssemblyIvory, EnumCADStat.POTENCY, 320);
 
+		// Refined
+		ItemCADComponent.addStatToStack(ModItems.cadAssemblyRefined, EnumCADStat.EFFICIENCY, 95);
+		ItemCADComponent.addStatToStack(ModItems.cadAssemblyRefined, EnumCADStat.POTENCY, 350);
+
 		// Creative
 		ItemCADComponent.addStatToStack(ModItems.cadAssemblyCreative, EnumCADStat.EFFICIENCY, -1);
 		ItemCADComponent.addStatToStack(ModItems.cadAssemblyCreative, EnumCADStat.POTENCY, -1);
@@ -75,6 +79,10 @@ public class DefaultStats {
 		// Radiative
 		ItemCADComponent.addStatToStack(ModItems.cadCoreRadiative, EnumCADStat.COMPLEXITY, 30);
 		ItemCADComponent.addStatToStack(ModItems.cadCoreRadiative, EnumCADStat.PROJECTION, 7);
+
+		// Overflowing
+		ItemCADComponent.addStatToStack(ModItems.cadCoreOverflowing, EnumCADStat.COMPLEXITY, 36);
+		ItemCADComponent.addStatToStack(ModItems.cadCoreOverflowing, EnumCADStat.PROJECTION, 7);
 	}
 
 	public static void registerSocketStats() {
@@ -102,19 +110,21 @@ public class DefaultStats {
 		ItemCADComponent.addStatToStack(ModItems.cadSocketHuge, EnumCADStat.BANDWIDTH, 8);
 		ItemCADComponent.addStatToStack(ModItems.cadSocketHuge, EnumCADStat.SOCKETS, 12);
 		ItemCADComponent.addStatToStack(ModItems.cadSocketHuge, EnumCADStat.SAVED_VECTORS, 21);
+
+		// Augmented
+		ItemCADComponent.addStatToStack(ModItems.cadSocketAugmented, EnumCADStat.BANDWIDTH, 9);
+		ItemCADComponent.addStatToStack(ModItems.cadSocketAugmented, EnumCADStat.SOCKETS, 12);
+		ItemCADComponent.addStatToStack(ModItems.cadSocketAugmented, EnumCADStat.SAVED_VECTORS, 21);
 	}
 
 	public static void registerBatteryStats() {
 		// Basic
-		ItemCADComponent.addStatToStack(ModItems.cadBatteryBasic, EnumCADStat.OVERCLOCK, 5000);
 		ItemCADComponent.addStatToStack(ModItems.cadBatteryBasic, EnumCADStat.OVERFLOW, 100);
 
 		// Extended
-		ItemCADComponent.addStatToStack(ModItems.cadBatteryExtended, EnumCADStat.OVERCLOCK, 10000);
 		ItemCADComponent.addStatToStack(ModItems.cadBatteryExtended, EnumCADStat.OVERFLOW, 500);
 
 		// Ultradense
-		ItemCADComponent.addStatToStack(ModItems.cadBatteryUltradense, EnumCADStat.OVERCLOCK, 15000);
 		ItemCADComponent.addStatToStack(ModItems.cadBatteryUltradense, EnumCADStat.OVERFLOW, 1000);
 	}
 

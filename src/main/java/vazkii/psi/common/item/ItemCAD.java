@@ -626,6 +626,12 @@ public class ItemCAD extends Item implements ICAD {
 				new ItemStack(ModItems.cadSocketTransmissive),
 				new ItemStack(ModItems.cadBatteryUltradense)));
 
+		// Refined CAD
+		subItems.add(makeCAD(new ItemStack(ModItems.cadAssemblyRefined),
+				new ItemStack(ModItems.cadCoreOverflowing),
+				new ItemStack(ModItems.cadSocketAugmented),
+				new ItemStack(ModItems.cadBatteryUltradense)));
+
 		// Creative CAD
 		subItems.add(makeCAD(new ItemStack(ModItems.cadAssemblyCreative),
 				new ItemStack(ModItems.cadCoreHyperClocked),

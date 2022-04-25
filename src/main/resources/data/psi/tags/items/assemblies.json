@@ -5,6 +5,7 @@
 		"psi:cad_assembly_psimetal",
 		"psi:cad_assembly_ebony_psimetal",
 		"psi:cad_assembly_ivory_psimetal",
+		"psi:cad_assembly_refined",
 		"psi:cad_assembly_creative"
 	]
 }

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EPI"
+  ],
+  "key": {
+    "I": {
+      "item": "psi:cad_assembly_ivory_psimetal"
+    },
+    "P": {
+      "item": "psi:psicore"
+    },
+    "E": {
+      "item": "psi:cad_assembly_ebony_psimetal"
+    }
+  },
+  "result": {
+    "item": "psi:cad_assembly_refined"
+  }
+}

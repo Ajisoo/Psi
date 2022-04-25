@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IPE"
+  ],
+  "key": {
+    "I": {
+      "item": "psi:cad_core_hyperclocked"
+    },
+    "P": {
+      "item": "psi:psicore"
+    },
+    "E": {
+      "item": "psi:cad_core_radiative"
+    }
+  },
+  "result": {
+    "item": "psi:cad_core_overflowing"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BPB",
+    "PNP",
+    "BPB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "P": {
+      "item": "psi:psigem"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result": {
+    "item": "psi:psicore"
+  }
+}

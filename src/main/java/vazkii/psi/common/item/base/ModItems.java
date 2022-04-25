@@ -45,6 +45,7 @@ public final class ModItems {
 	public static final Item psidust = new Item(defaultBuilder());
 	public static final Item psimetal = new Item(defaultBuilder());
 	public static final Item psigem = new Item(defaultBuilder());
+	public static final Item psicore = new Item(defaultBuilder());
 	public static final Item ebonyPsimetal = new Item(defaultBuilder());
 	public static final Item ivoryPsimetal = new Item(defaultBuilder());
 	public static final Item ebonySubstance = new Item(defaultBuilder());
@@ -55,6 +56,7 @@ public final class ModItems {
 	public static final Item cadAssemblyPsimetal = new ItemCADAssembly(defaultBuilder(), LibItemNames.CAD_PSIMETAL);
 	public static final Item cadAssemblyIvory = new ItemCADAssembly(defaultBuilder(), LibItemNames.CAD_IVORY_PSIMETAL);
 	public static final Item cadAssemblyEbony = new ItemCADAssembly(defaultBuilder(), LibItemNames.CAD_EBONY_PSIMETAL);
+	public static final Item cadAssemblyRefined = new ItemCADAssembly(defaultBuilder(), LibItemNames.CAD_REFINED);
 	public static final Item cadAssemblyCreative = new ItemCADAssembly(defaultBuilder(), LibItemNames.CAD_CREATIVE);
 
 	public static final Item cadCoreBasic = new ItemCADCore(defaultBuilder());
@@ -62,12 +64,14 @@ public final class ModItems {
 	public static final Item cadCoreConductive = new ItemCADCore(defaultBuilder());
 	public static final Item cadCoreHyperClocked = new ItemCADCore(defaultBuilder());
 	public static final Item cadCoreRadiative = new ItemCADCore(defaultBuilder());
+	public static final Item cadCoreOverflowing = new ItemCADCore(defaultBuilder());
 
 	public static final Item cadSocketBasic = new ItemCADSocket(defaultBuilder());
 	public static final Item cadSocketSignaling = new ItemCADSocket(defaultBuilder());
 	public static final Item cadSocketLarge = new ItemCADSocket(defaultBuilder());
 	public static final Item cadSocketTransmissive = new ItemCADSocket(defaultBuilder());
 	public static final Item cadSocketHuge = new ItemCADSocket(defaultBuilder());
+	public static final Item cadSocketAugmented = new ItemCADSocket(defaultBuilder());
 
 	public static final Item cadBatteryBasic = new ItemCADBattery(defaultBuilder());
 	public static final Item cadBatteryExtended = new ItemCADBattery(defaultBuilder());
@@ -138,6 +142,7 @@ public final class ModItems {
 		r.register(psidust.setRegistryName(LibMisc.MOD_ID, LibItemNames.PSIDUST));
 		r.register(psimetal.setRegistryName(LibMisc.MOD_ID, LibItemNames.PSIMETAL));
 		r.register(psigem.setRegistryName(LibMisc.MOD_ID, LibItemNames.PSIGEM));
+		r.register(psicore.setRegistryName(LibMisc.MOD_ID, LibItemNames.PSICORE));
 		r.register(ebonyPsimetal.setRegistryName(LibMisc.MOD_ID, LibItemNames.EBONY_PSIMETAL));
 		r.register(ivoryPsimetal.setRegistryName(LibMisc.MOD_ID, LibItemNames.IVORY_PSIMETAL));
 		r.register(ebonySubstance.setRegistryName(LibMisc.MOD_ID, LibItemNames.EBONY_SUBSTANCE));
@@ -149,18 +154,21 @@ public final class ModItems {
 		r.register(cadAssemblyPsimetal.setRegistryName(LibMisc.MOD_ID, LibItemNames.CAD_ASSEMBLY_PSIMETAL));
 		r.register(cadAssemblyIvory.setRegistryName(LibMisc.MOD_ID, LibItemNames.CAD_ASSEMBLY_IVORY_PSIMETAL));
 		r.register(cadAssemblyEbony.setRegistryName(LibMisc.MOD_ID, LibItemNames.CAD_ASSEMBLY_EBONY_PSIMETAL));
+		r.register(cadAssemblyRefined.setRegistryName(LibMisc.MOD_ID, LibItemNames.CAD_ASSEMBLY_REFINED));
 
 		r.register(cadCoreBasic.setRegistryName(LibMisc.MOD_ID, LibItemNames.CAD_CORE_BASIC));
 		r.register(cadCoreOverclocked.setRegistryName(LibMisc.MOD_ID, LibItemNames.CAD_CORE_OVERCLOCKED));
 		r.register(cadCoreConductive.setRegistryName(LibMisc.MOD_ID, LibItemNames.CAD_CORE_CONDUCTIVE));
 		r.register(cadCoreHyperClocked.setRegistryName(LibMisc.MOD_ID, LibItemNames.CAD_CORE_HYPERCLOCKED));
 		r.register(cadCoreRadiative.setRegistryName(LibMisc.MOD_ID, LibItemNames.CAD_CORE_RADIATIVE));
+		r.register(cadCoreOverflowing.setRegistryName(LibMisc.MOD_ID, LibItemNames.CAD_CORE_OVERFLOWING));
 
 		r.register(cadSocketBasic.setRegistryName(LibMisc.MOD_ID, LibItemNames.CAD_SOCKET_BASIC));
 		r.register(cadSocketSignaling.setRegistryName(LibMisc.MOD_ID, LibItemNames.CAD_SOCKET_SIGNALING));
 		r.register(cadSocketLarge.setRegistryName(LibMisc.MOD_ID, LibItemNames.CAD_SOCKET_LARGE));
 		r.register(cadSocketTransmissive.setRegistryName(LibMisc.MOD_ID, LibItemNames.CAD_SOCKET_TRANSMISSIVE));
 		r.register(cadSocketHuge.setRegistryName(LibMisc.MOD_ID, LibItemNames.CAD_SOCKET_HUGE));
+		r.register(cadSocketAugmented.setRegistryName(LibMisc.MOD_ID, LibItemNames.CAD_SOCKET_AUGMENTED));
 
 		r.register(cadBatteryBasic.setRegistryName(LibMisc.MOD_ID, LibItemNames.CAD_BATTERY_BASIC));
 		r.register(cadBatteryExtended.setRegistryName(LibMisc.MOD_ID, LibItemNames.CAD_BATTERY_EXTENDED));

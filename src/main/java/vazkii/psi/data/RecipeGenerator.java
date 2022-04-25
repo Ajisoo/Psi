@@ -56,6 +56,50 @@ public class RecipeGenerator extends RecipeProvider implements IConditionBuilder
 		ICriterionInstance hasIvoryPsimetal = hasItem(ModTags.INGOT_IVORY_PSIMETAL);
 		ICriterionInstance hasPsidust = hasItem(ModTags.PSIDUST);
 
+		ShapedRecipeBuilder.shapedRecipe(ModItems.psicore)
+				.key('P', ModItems.psigem)
+				.key('N', Items.NETHER_STAR)
+				.key('B', Items.NETHERITE_INGOT)
+				.patternLine("BPB")
+				.patternLine("PNP")
+				.patternLine("BPB")
+				.build(consumer, Psi.location("psicore"));
+		ShapedRecipeBuilder.shapedRecipe(ModItems.cadAssemblyRefined)
+				.key('P', ModItems.psicore)
+				.key('I', ModItems.cadAssemblyIvory)
+				.key('E', ModItems.cadAssemblyEbony)
+				.patternLine("IPE")
+				.build(consumer, Psi.location("cad_assembly_refined"));
+		ShapedRecipeBuilder.shapedRecipe(ModItems.cadAssemblyRefined)
+				.key('P', ModItems.psicore)
+				.key('I', ModItems.cadAssemblyIvory)
+				.key('E', ModItems.cadAssemblyEbony)
+				.patternLine("EPI")
+				.build(consumer, Psi.location("cad_assembly_refined_2"));
+		ShapedRecipeBuilder.shapedRecipe(ModItems.cadCoreOverflowing)
+				.key('P', ModItems.psicore)
+				.key('I', ModItems.cadCoreRadiative)
+				.key('E', ModItems.cadCoreHyperClocked)
+				.patternLine("IPE")
+				.build(consumer, Psi.location("cad_core_overflowing"));
+		ShapedRecipeBuilder.shapedRecipe(ModItems.cadCoreOverflowing)
+				.key('P', ModItems.psicore)
+				.key('I', ModItems.cadCoreRadiative)
+				.key('E', ModItems.cadCoreHyperClocked)
+				.patternLine("EPI")
+				.build(consumer, Psi.location("cad_core_overflowing_2"));
+		ShapedRecipeBuilder.shapedRecipe(ModItems.cadSocketAugmented)
+				.key('P', ModItems.psicore)
+				.key('I', ModItems.cadSocketHuge)
+				.key('E', ModItems.cadSocketTransmissive)
+				.patternLine("IPE")
+				.build(consumer, Psi.location("cad_socket_augmented"));
+		ShapedRecipeBuilder.shapedRecipe(ModItems.cadSocketAugmented)
+				.key('P', ModItems.psicore)
+				.key('I', ModItems.cadSocketHuge)
+				.key('E', ModItems.cadSocketTransmissive)
+				.patternLine("EPI")
+				.build(consumer, Psi.location("cad_socket_augmented_2"));
 		ShapedRecipeBuilder.shapedRecipe(ModBlocks.cadAssembler)
 				.key('I', Tags.Items.INGOTS_IRON)
 				.key('P', Items.PISTON)
